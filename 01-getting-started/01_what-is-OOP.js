@@ -29,7 +29,7 @@ console.log(getWage(baseSalary, overTime, rate));
 // * OOP
 
 let employee = {
-  baseSalary: 10_000,
+  baseSalary: 10000,
   overTime: 10,
   rate: 20,
   getWage: function () {
