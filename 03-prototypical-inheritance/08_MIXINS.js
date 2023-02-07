@@ -1,9 +1,10 @@
 // ! MIXINS
 // * In JavaScript we can use "mixins" to achieve "COMPOSITION"
 
-// we pass the objects into this function using the rest operator, using (...source) => Collect all the arguments and turn them into an array.
+// ! we pass the objects into this function using the rest operator, using (...source) => Collect all the arguments and turn them into an array.
 // * Object.assign() => needs sources explicitly we cannot pass an array here. So this time we can use the spread operator.(To spread an array into multiple arguments we are spreading array into multiple objects)
 function mixin(target, ...source) {
+  // console.log("Mixin", ...source);
   Object.keys(target, ...source);
 }
 
@@ -25,7 +26,7 @@ const canWalk = {
 // ! IN ES6, we have a new method Object.assign(), we can pass an object as a target and then pass one or more source objects
 
 const person = Object.assign({}, canWalk, canEat);
-console.log(person);
+console.log("Person >", person);
 // We can use this to copy the properties and methods from one object to another.
 
 // This Object.assign will copy all the properties and methods that we have defined in canWalk and canEat into this blank object. also we can add more source here
