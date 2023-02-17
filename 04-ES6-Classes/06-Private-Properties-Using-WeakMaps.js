@@ -32,6 +32,10 @@ class Circle {
     _move.get(this)();
     console.log(_radius.get(this));
   }
+
+  getRadius() {
+    return _radius.get(this);
+  }
 }
 
 const c = new Circle(2);
