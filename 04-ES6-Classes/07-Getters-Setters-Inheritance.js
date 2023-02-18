@@ -46,7 +46,7 @@ const c = new Circle("red", 3);
 
 /* 
     c
-    Circle {}[[Prototype]]: Shape // constructor: class Circledraw: ƒ draw()[[Prototype]]: Object
+    Circle {}[[Prototype]]: Shape // constructor: class Circle draw: ƒ draw()[[Prototype]]: Object
     * Note that in this prototype we have the draw method, because we as we discussed earlier all the methods we implemented here will end up in the prototype of circle
     * Now this prototype object itself has a prototype
     [[Prototype]]: Object
